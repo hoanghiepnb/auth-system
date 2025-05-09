@@ -176,7 +176,7 @@ export class AuthService {
       const token = uuidv4();
 
       // Set expiry to 1 hour from now (or use configured value)
-      const expiresAt = new Date(Date.now() + env.CONFIRM_TOKEN_EXPIRATION_MS);
+      const expiresAt = new Date(Date.now() + env.RESET_TOKEN_EXPIRATION_MS);
 
       // Save token to repository
       await this.passwordResetRepository.create({

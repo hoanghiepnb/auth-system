@@ -26,11 +26,6 @@ const envSchema = z.object({
   ACCOUNT_LOCK_DURATION_MINUTES: z.coerce.number().min(5).default(30),
   RESET_TOKEN_EXPIRATION_MS: z.coerce.number().default(3600000),
 
-  // Confirmation token
-  CONFIRM_TOKEN_EXPIRATION_MS: z.coerce.number().default(3600000),
-
-
-
   PORT: z.string().default('3000'),
   NODE_ENV: z
     .enum(['development', 'production', 'test'])

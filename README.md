@@ -50,8 +50,10 @@ DB_NAME=auth_system
 # JWT Auth
 JWT_SECRET=your_secret_key_change_in_production
 JWT_EXPIRES_IN=15m
+JWT_EXPIRATION_SECONDS=900
 JWT_REFRESH_SECRET=your_refresh_secret_change_in_production
 JWT_REFRESH_EXPIRES_IN=7d
+REFRESH_TOKEN_EXPIRATION_DAYS=7
 
 # Auth settings
 BCRYPT_SALT_ROUNDS=12
